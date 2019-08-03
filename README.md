@@ -43,6 +43,8 @@ This sets up Mattermost and Jira servers to demo the Mattermost Jira plugin.
 1. Go to Settings Menu > System, then click Webhooks
 2. Create a Webhook with these values:
 
+![Mattermost Webhook Values](https://i.imgur.com/GmOZOIs.png)
+
 3. Install Jira in the Mattermost server by running this slash command and following the instructions displayed
 
 ```
