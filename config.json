@@ -1,0 +1,43 @@
+{
+    "ServiceSettings": {
+        "SiteURL": "http://127.0.0.1:8065",
+        "ExperimentalLdapGroupSync": true
+    },
+    "TeamSettings": {
+        "SiteName": "Jira Test Server"
+    },
+    "SqlSettings": {
+        "DriverName": "mysql",
+        "DataSource": "mmuser:MATTERMOST_MYSQL_PASSWORD@tcp(127.0.0.1:3306)/mattermost?charset=utf8mb4,utf8\u0026readTimeout=30s\u0026writeTimeout=30s"
+    },
+    "LogSettings": {
+        "EnableConsole": true,
+        "ConsoleLevel": "DEBUG",
+        "ConsoleJson": false,
+        "EnableFile": true,
+        "FileLevel": "DEBUG",
+        "FileJson": true,
+        "FileLocation": "",
+        "EnableWebhookDebugging": true,
+        "EnableDiagnostics": false
+    },
+    "PluginSettings": {
+        "Enable": true,
+        "EnableUploads": false,
+        "EnableHealthCheck": true,
+        "Directory": "./plugins",
+        "ClientDirectory": "./client/plugins",
+        "Plugins": {
+            "jira": {
+                "enablejiraui": true,
+                "secret": "O2P00TjhPAcsGExjodFFjKj1G9Ia22W1",
+                "username": "jira"
+            }
+        },
+        "PluginStates": {
+            "jira": {
+                "Enable": true
+            }
+        }
+    }
+}

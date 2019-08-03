@@ -1,0 +1,15 @@
+[Unit] 
+Description=Atlassian Jira
+After=mysql.service
+Requires=mysql.service
+
+[Service] 
+Type=forking
+User=jira
+Environment=JIRA_HOME=/opt/jira-home
+PIDFile=/opt/atlassian-jira-software-8.2.4-standalone/work/catalina.pid
+ExecStart=/opt/atlassian-jira-software-8.2.4-standalone/bin/start-jira.sh
+ExecStop=/opt/atlassian-jira-software-8.2.4-standalone/bin/stop-jira.sh
+
+[Install] 
+WantedBy=multi-user.target 
